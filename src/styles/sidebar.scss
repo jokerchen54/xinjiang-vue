@@ -4,7 +4,11 @@
     min-height: 100%;
     transition: margin-left .28s;
     margin-left: $sideBarWidth;
-    position: relative;
+    position: fixed;
+    width: calc(100% - 210px);
+    top: 64px;
+    z-index: -1;
+    
   }
 
   .sidebar-container {
@@ -14,7 +18,7 @@
     height: 100%;
     position: fixed;
     font-size: 0px;
-    top: 0;
+    top: 64px;
     bottom: 0;
     left: 0;
     z-index: 1001;
